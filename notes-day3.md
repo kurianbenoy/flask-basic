@@ -1,6 +1,6 @@
 # Day 3 (Flask-LFH)
 
-We missed something yesterday ie `generators`
+We missed something yesterday ie `decorators`
 
 ```
 In [1]: def do_twice(func): 
@@ -14,7 +14,7 @@ In [2]: def hello():
    ...:     print("Welcome to LFH") 
 ```
 
-### Without generators
+### Without decorators
 
 ```
 In [4]: do_twice(hello)()                                                                                                                                                                                          
@@ -22,7 +22,7 @@ Welcome to LFH
 Welcome to LFH
 ```
 
-### With generators?
+### With decorators?
 
 ```
 In [6]: @do_twice 
@@ -31,7 +31,9 @@ In [6]: @do_twice
    ...:                            
 ```
 
-Any Django users here? If yes, name a generator in Django
+Any Django users here? If yes, name a decorators in Django(@csrf_token)
+
+for more information about decorators: https://realpython.com/primer-on-python-decorators/#decorating-functions-with-arguments
 
 ## Templates and web forms
 
