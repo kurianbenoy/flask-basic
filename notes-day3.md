@@ -1,9 +1,44 @@
 # Day 3 (Flask-LFH)
 
-Templates and web forms
+We missed something yesterday ie `generators`
+
+```
+In [1]: def do_twice(func): 
+   ...:     def wrap(): 
+   ...:         func() 
+   ...:         func() 
+   ...:     return wrap 
+   ...:                                                                                                                                                                                                            
+
+In [2]: def hello(): 
+   ...:     print("Welcome to LFH") 
+```
+
+### Without generators
+
+```
+In [4]: do_twice(hello)()                                                                                                                                                                                          
+Welcome to LFH
+Welcome to LFH
+```
+
+### With generators?
+
+```
+In [6]: @do_twice 
+   ...: def hello(): 
+   ...:     print("Welcome back") 
+   ...:                            
+```
+
+Any Django users here? If yes, name a generator in Django
+
+## Templates and web forms
 
 You’ve written the authentication views for your application, but if you’re running the server and try to go to any of the URLs, you’ll see a TemplateNotFound error. That’s because the views are calling render_template(), but you haven’t written the templates yet. The template files will be stored in the templates directory inside the flaskr package.
-Templates are files that contain static data as well as placeholders for dynamic data. A template is rendered with specific data to produce a final document. Flask uses the Jinja template library to render templates.
+Templates are files that contain static data as well as placeholders for dynamic data. A template is rendered with specific data to produce a final document. 
+
+> Flask uses the Jinja template library to render templates.
 
 ### Flask file structure
 
