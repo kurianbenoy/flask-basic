@@ -187,9 +187,8 @@ def login():
 
 ## Task
 
-We learned Forms & Templates yesterday. Create forms for creative things - chuck the regular Registration forms and see you can create a form for something fun. Once it's done, post the screenshot in the group. It would be fun! Super cool if you can figure out how to make it pretty [ Psst- Remember CSS and the static folder?]
-
-- Implement in template, send- the current time to HTML file
+1. We learned Forms & Templates yesterday. Create forms for creative things - chuck the regular Registration forms and see you can create a form for something fun. Once it's done, post the screenshot in the group. It would be fun! Super cool if you can figure out how to make it pretty [ Psst- Remember CSS and the static folder?]
+2. Create two routes /date and /time that displays today’s date and and current time on the webpage respectively
 
 
 ### References
